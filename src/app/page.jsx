@@ -8,13 +8,8 @@ const Homepage = () => {
     <motion.div className="h-full" initial={{y:"-200vh"}} animate={{y:"0%"}} transition={{duration:1}}>
       <div className="flex flex-col gap-20 lg:flex-row h-full px-4 sm:px-8 md:px-12 lg:px-20 xl:px-30 ">
         {/* Image */}
-        {/* <div className="h-1/2 lg:h-full lg:w-1/2 rounded-full relative ">
-          <Image src="/mypic.jpeg" fill className="h-96 w-96 rounded-full" />
-        </div> */}
-        <div className="flex h-1/2 lg:h-full lg:w-1/2 relative  bg-black top-[h/3] items-center justify-center">
-            <div className="h-96 w-96 bg-white rounded-full ">
-            <img className="contain" src="/mypic.jpeg"/>
-            </div>
+        <div className="h-1/2 lg:h-full lg:w-1/2 rounded-full relative ">
+          <Image src="/mypic.jpeg" fill className="h-48 w-48 rounded-full" />
         </div>
         {/* Text */}
         <div className="h-1/2 lg:h-full lg:w-1/2 lg:gap-8 flex flex-col gap-8 items-center justify-center ">
