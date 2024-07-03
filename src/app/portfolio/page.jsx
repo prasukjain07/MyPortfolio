@@ -23,14 +23,6 @@ const items = [
     {
         id: 3,
         color: "from-violet-300 to-purple-300",
-        title: "Spectrum",
-        desc: "A frontend website of collede Artand Photography Competition. Build homepage using Fluid-JS",
-        img: "spectrum.png",
-        link: "spectrum-hazel.vercel.app",
-    },
-    {
-        id: 4,
-        color: "from-purple-300 to-red-300",
         title: "Amazon Clone",
         desc: "A simple frontend project by cloning home page of Amazon",
         img: "amazon.png",
@@ -46,7 +38,7 @@ const PortfolioPage = () => {
 
     const { scrollYProgress } = useScroll({ target: ref })
 
-    const x = useTransform(scrollYProgress, [0, 1], ["0%", "-80%"])
+    const x = useTransform(scrollYProgress, [0, 1], ["0%", "-75%"])
     return (
         <motion.div className="h-full" initial={{ y: "-200vh" }} animate={{ y: "0%" }} transition={{ duration: 1 }}>
             <div className="h-[600vh] relative" >

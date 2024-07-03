@@ -26,8 +26,8 @@ const AboutPage = () => {
                     <div className="flex flex-col gap-12 justify-center">
                         <h1 className="font-bold text-2xl">About Me</h1>
                         <p>As a fullstack web developer, I am deeply passionate about leveraging technology to create innovative solutions. With a strong foundation in problem-solving, I thrive on tackling complex challenges and delivering impactful results.</p>
-                        <span>Coding is not just my profession; it's my passion and the way I create solutions.</span>
-                        <svg
+                        <span>Coding is not just my profession; its my passion and the way I create solutions.</span>
+                        <motion.svg
                             initial={{ opacity: 0.2, y: 0 }}
                             animate={{ opacity: 1, y: "10px" }}
                             transition={{ repeat: Infinity, duration: 3, ease: easeInOut }}
@@ -38,7 +38,7 @@ const AboutPage = () => {
                             viewBox="0 0 62.5"
                         >
                             <path d="M25,45A14,14,0,0,0,39,31V19a14,14,0,0,0-28,0V31A14,14,0,0,0,25,45ZM13,19a12,12,0,0,1,24,0V31a12,12,0,0,1-24,0Z" /><path d="M24,24.5h.09l.2.21a1,1,0,0,0,1.42,0l.2-.21H26v-.09l5.71-5.7-1.42-1.42L26,21.59V11H24V21.59l-4.29-4.3-1.42,1.42L24,24.41Z" />
-                        </svg>
+                        </motion.svg>
                     </div>
                     {/* skills  */}
                     <div className="flex flex-col gap-12 justify-center " ref={skillRef}>

@@ -33,10 +33,10 @@ const ContactPage = () => {
     };
 
     return (
-        <motion.div className="h-full" initial={{ y: "-200vh" }} animate={{ y: "0%" }} transition={{ duration: 1 }}>
-            <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-30">
+        
+            <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32 overflow-scroll">
                 {/* TextContainer  */}
-                <div className="flex flex-col lg:h-full lg:w-1/2 gap-8 mt-[30vh] text-center">
+                <div className="flex flex-col lg:h-full lg:w-1/2 gap-8 lg:mt-[30vh] text-center">
                     <p className="text-6xl">
                         Work with Me :)
                     </p>
@@ -46,7 +46,7 @@ const ContactPage = () => {
                 {/* Form Container  */}
                 <form
                     onSubmit={sendEmail}
-                    ref={form} className=" lg:h-[90%] lg:w-1/2 bg-red-50 rounded-xl text-xl flex p-8 m-4 flex-col gap-8 justify-center ">
+                    ref={form} className=" md:h-full lg:h-[90%] lg:w-1/2 bg-red-50 rounded-xl text-xl flex p-8 m-4 flex-col gap-8 justify-center ">
                     <span className="text-4xl font-serif text-center">Contact Me</span>
                     <span className="">Name</span>
                     <input className="bg-transparent border-b-2 border-b-black outline-none" name="user_name" type="text" />
@@ -60,7 +60,6 @@ const ContactPage = () => {
                 </form>
 
             </div>
-        </motion.div>
     )
 }
 

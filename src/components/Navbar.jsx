@@ -1,6 +1,6 @@
 "use client"
 import { useState } from "react";
-import { easeIn, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import Link from "next/link"
 import { usePathname } from "next/navigation";
 const links = [
@@ -71,7 +71,7 @@ function Navbar() {
         <div className="h-full flex items-center justify-between px-4 sm:px-8 md:px-12 lg:px-20 xl:px-30">
             <div className="hidden md:flex gap-4 w-1/3 justify-start z-10">
                 {links.map(link => (
-                    <Link href={link.url} className={`rounded p-1 ${pathName === link.url && "bg-black text-white"}`} >{link.title}</Link>
+                    <Link key={link.title} href={link.url} className={`rounded p-1 ${pathName === link.url && "bg-black text-white"}`} >{link.title}</Link>
                 ))}
             </div>
             {/* LOGO */}
@@ -117,8 +117,8 @@ function Navbar() {
                 {open && (
                     <motion.div variants={listVariants} initial="closed" animate="opened" className="absolute top-0 left-0 w-screen h-screen bg-black text-white flex flex-col justify-center items-center gap-8 text-4xl z-40">
                         {links.map(link => (
-                            <motion.div variants={listItemVariants}>
-                                <Link href={link.url} key={link.title}>{link.title}</Link>
+                            <motion.div key={link.title} variants={listItemVariants}>
+                                <Link href={link.url} >{link.title}</Link>
                             </motion.div>
                         ))}
                     </motion.div>
