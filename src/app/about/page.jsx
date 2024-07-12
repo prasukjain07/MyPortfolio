@@ -24,8 +24,8 @@ const AboutPage = () => {
                 <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-32 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 lg:w-2/3 lg:pr-0 xl:1/2">
                     {/* AboutMe  */}
                     <div className="flex flex-col gap-12 justify-center">
-                        <h1 className="font-bold text-2xl">About Me</h1>
-                        <p>As a fullstack web developer, I am deeply passionate about leveraging technology to create innovative solutions. With a strong foundation in problem-solving, I thrive on tackling complex challenges and delivering impactful results.</p>
+                        <h1 className="font-bold text-4xl">About Me</h1>
+                        <p className="text-xl">As a fullstack web developer, I am deeply passionate about leveraging technology to create innovative solutions. With a strong foundation in problem-solving, I thrive on tackling complex challenges and delivering impactful results.</p>
                         <span>Coding is not just my profession; its my passion and the way I create solutions.</span>
                         <motion.svg
                             initial={{ opacity: 0.2, y: 0 }}
@@ -110,7 +110,9 @@ const AboutPage = () => {
                     </div>
                     {/* experience  */}
                     <div className="flex flex-col justify-center pb-48" ref={experienceRef}>
-                        <motion.h1 className="font-bold text-2xl mb-16" initial={{ x: "-300px" }} animate={isExperienceRefInView ? { x: 0 } : {}} transition={{ delay: 0.2 }}>Experience</motion.h1>
+                        <motion.h1 className="font-bold text-2xl mb-16" initial={{ x: "-300px" }} animate={isExperienceRefInView ? { x: 0 } : {}} transition={{ delay: 0.2 }}>
+                            Experience
+                            </motion.h1>
                         {/* Experience list  */}
                         <motion.div initial={{ x: "-300px" }} animate={isExperienceRefInView ? { x: 0 } : {}}>
                             {/* Experience list item  */}
@@ -119,7 +121,7 @@ const AboutPage = () => {
                                 <div className="w-1/3">
                                     <div className="bg-white p-3 font-semibold rounded-b-lg rounded-l-lg ">Tech Team Jointhead</div>
                                     <div className="p-3 text-sm italic">Develop the website for E-Summit 2024 along with team of 5</div>
-                                    <div className="p-3 text-red-400 text-sm font-semibold">
+                                    <div className="p-3  text-sm font-semibold" style={{ color: '#000034' }}>
                                         Jan 2024 - April 2024
                                     </div>
                                 </div>
@@ -127,7 +129,7 @@ const AboutPage = () => {
                                 <div className="w-1/6 flex justify-center">
                                     {/* line  */}
                                     <div className="flex justify-center w-1 h-full bg-gray-600 rounded relative">
-                                        <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white "></div>
+                                        <div className="absolute w-5 h-5 rounded-full ring-4 ring-blue-900 bg-white "></div>
                                     </div>
                                 </div>
                                 {/* right  */}
@@ -139,7 +141,7 @@ const AboutPage = () => {
                         </motion.div>
 
                         {/* Experience list  */}
-                        <div>
+                        <motion.div initial={{ x: "-600px" }} animate={isExperienceRefInView ? { x: 0, transition: { delay: 0.5 }  } : {}}>
                             {/* Experience list item  */}
                             <div className="flex justify-between h-48">
                                 {/* left  */}
@@ -149,30 +151,30 @@ const AboutPage = () => {
                                 <div className="w-1/6 flex justify-center">
                                     {/* line  */}
                                     <div className="flex justify-center w-1 h-full bg-gray-600 rounded relative">
-                                        <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white "></div>
+                                        <div className="absolute w-5 h-5 rounded-full ring-4 ring-blue-900 bg-white "></div>
                                     </div>
                                 </div>
                                 {/* right  */}
                                 <div className="w-1/3">
-                                    <div className="bg-white p-3 font-semibold rounded-b-lg rounded-l-lg ">Tech Team Jointhead</div>
-                                    <div className="p-3 text-sm italic">Develop the website for E-Summit 2024 along with team of 5</div>
-                                    <div className="p-3 text-red-400 text-sm font-semibold">
-                                        Jan 2024 - April 2024
+                                    <div className="bg-white p-3 font-semibold rounded-b-lg rounded-l-lg ">Marketing Subhead, PECFEST</div>
+                                    <div className="p-3 text-sm italic">Reach brands for sponsorship in college FEST</div>
+                                    <div className="p-3 text-sm font-semibold style={{ color: '#000034' }}">
+                                        Aug 2023 - Nov 2023
                                     </div>
                                 </div>
                             </div>
 
-                        </div>
+                        </motion.div>
 
                         {/* Experience list  */}
-                        <div>
+                        <motion.div initial={{ x: "-300px" }} animate={isExperienceRefInView ? { x: 0, transition: { delay: 1 }  } : {}}>
                             {/* Experience list item  */}
                             <div className="flex justify-between h-64">
                                 {/* left  */}
                                 <div className="w-1/3">
-                                    <div className="bg-white p-3 font-semibold rounded-b-lg rounded-l-lg ">Tech Team Jointhead</div>
-                                    <div className="p-3 text-sm italic">Develop the website for E-Summit 2024 along with team of 5</div>
-                                    <div className="p-3 text-red-400 text-sm font-semibold">
+                                    <div className="bg-white p-3 font-semibold rounded-b-lg rounded-l-lg ">Implementation Body, ACM</div>
+                                    <div className="p-3 text-sm italic">Regularly conducted technical & coding sessions.</div>
+                                    <div className="p-3  text-sm font-semibold" style={{ color: '#000034' }}>
                                         Jan 2024 - April 2024
                                     </div>
                                 </div>
@@ -180,7 +182,7 @@ const AboutPage = () => {
                                 <div className="w-1/6 flex justify-center">
                                     {/* line  */}
                                     <div className="flex justify-center w-1 h-full bg-gray-600 rounded relative">
-                                        <div className="absolute w-5 h-5 rounded-full ring-4 ring-red-400 bg-white "></div>
+                                        <div className="absolute w-5 h-5 rounded-full ring-4 ring-blue-900 bg-white "></div>
                                     </div>
                                 </div>
                                 {/* right  */}
@@ -188,8 +190,7 @@ const AboutPage = () => {
 
                                 </div>
                             </div>
-
-                        </div>
+                        </motion.div>
 
                     </div>
                 </div>

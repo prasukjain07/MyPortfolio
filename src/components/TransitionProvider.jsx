@@ -10,7 +10,7 @@ const TransitionProvider = ({ children }) => {
     const pathName = usePathname();
     return (
         <AnimatePresence mode="wait">
-            <div key={pathName} className="w-screen h-screen bg-gradient-to-b from-blue-200 to-blue-100">
+            <div key={pathName} className="w-screen h-screen bg-gradient-to-b from-blue-100 to-blue-500">
 
                 {/* Black Animaion  */}
 
