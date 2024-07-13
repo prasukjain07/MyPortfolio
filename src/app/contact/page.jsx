@@ -3,6 +3,7 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { motion } from "framer-motion";
 import { useState } from "react";
+import Link from 'next/link';
 const ContactPage = () => {
 
     const [success, setSuccess] = useState(false)
@@ -35,7 +36,7 @@ const ContactPage = () => {
     return (
 
 
-        <motion.div  className="h-full" initial={{ y: "-200vh" }} animate={{ y: "0%" }} transition={{ duration: 1 }}>
+        <motion.div className="h-full" initial={{ y: "-200vh" }} animate={{ y: "0%" }} transition={{ duration: 1 }}>
             <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32 overflow-scroll">
                 {/* TextContainer  */}
                 <div className="flex flex-col lg:h-full lg:w-1/2 gap-8 lg:mt-[30vh] text-center">
@@ -43,6 +44,18 @@ const ContactPage = () => {
                         Work with Me :)
                     </p>
                     <p className="text-xl">You can contact me via form or at <i>prasukjain0703@gmail.com</i></p>
+
+                    <div className="md:hidden flex gap-6 justify-center items-center">
+                        <Link href="https://github.com/prasukjain07">
+                            <img src="/github.png" className="h-8 w-8" />
+                        </Link>
+                        <Link href="https://www.instagram.com/prasukjain_07">
+                            <img src="/instagram.png" className="h-8 w-8" />
+                        </Link>
+                        <Link href="https://www.linkedin.com/in/prasuk-jain-1053b5244/">
+                            <img src="/linkedin.png" className="h-8 w-8" />
+                        </Link>
+                    </div>
 
                 </div>
                 {/* Form Container  */}
@@ -62,7 +75,7 @@ const ContactPage = () => {
                 </form>
 
             </div>
-            </motion.div>
+        </motion.div>
     )
 }
 
