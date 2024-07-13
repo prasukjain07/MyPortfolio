@@ -22,7 +22,7 @@ const Homepage = () => {
         {/* Text */}
         <div className="h-1/2 lg:h-full lg:w-1/2 lg:gap-8 p-10 pt-0 flex flex-col gap-8 items-center justify-center ">
           <div>
-            <h1 className="italic text-xl md:text-2xl md:mt-2">Hello! I'm Prasuk Jain, a passionate and dedicated third-year B.Tech student specializing in Computer Science at Punjab Engineering College, Chandigarh. I'm a Full-Stack Developer with a strong focus on front-end development. I enjoy creating digital experiences that are clean, efficient, and user-friendly.</h1>
+            <h1 className="italic text-xl md:text-2xl md:mt-2">Hello! I am Prasuk Jain, a passionate and dedicated third-year B.Tech student specializing in Computer Science at Punjab Engineering College, Chandigarh. I am a Full-Stack Developer with a strong focus on front-end development. I enjoy creating digital experiences that are clean, efficient, and user-friendly.</h1>
           </div>
           <div className="flex gap-8 w-full justify-center lg:justify-normal">
             <Link href="/portfolio">

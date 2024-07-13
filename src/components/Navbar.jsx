@@ -118,7 +118,7 @@ function Navbar() {
                     <motion.div variants={listVariants} initial="closed" animate="opened" className="absolute top-0 left-0 w-screen h-screen bg-black text-white flex flex-col justify-center items-center gap-8 text-4xl z-40">
                         {links.map(link => (
                             <motion.div key={link.title} variants={listItemVariants}>
-                                <Link href={link.url} >{link.title}</Link>
+                                <Link href={link.url}> {link.title} </Link>
                             </motion.div>
                         ))}
                     </motion.div>
