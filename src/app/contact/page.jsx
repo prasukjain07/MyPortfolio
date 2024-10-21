@@ -63,12 +63,12 @@ const ContactPage = () => {
                     ref={form} className=" md:h-full lg:h-[90%] lg:w-1/2 bg-red-50 rounded-xl text-xl flex p-8 m-4 flex-col gap-8 justify-center ">
                     <span className="text-4xl font-serif text-center">Contact Me</span>
                     <span className="">Name</span>
-                    <input className="bg-transparent border-b-2 border-b-black outline-none" name="user_name" type="text" />
+                    <input className="bg-white border-b-2 border-b-black " name="user_name" type="text" />
                     <span>Email</span>
-                    <input className="bg-transparent border-b-2 border-b-black outline-none" name="user_email" type="text" />
+                    <input className="bg-white border-b-2 border-b-black " name="user_email" type="email" />
                     <span>Message</span>
-                    <textarea className="bg-transparent border-b-2 border-b-black outline-none" name="user_message" row={6} />
-                    <button className="bg-purple-200 rounded text-semibold text-gray-600 py-2">Send</button>
+                    <textarea className="bg-white border-b-2 border-b-black outline-none" name="user_message" row={6} />
+                    <button className="bg-purple-200 rounded text-semibold text-gray-600 py-2 hover:bg-purple-500 hover:text-white">Send</button>
                     {success && <span className="text-green-600 font-semibold">Your message has been sent successfully!</span>}
                     {error && <span className="text-red-600 font-semibold">Something went wrong!</span>}
                 </form>
