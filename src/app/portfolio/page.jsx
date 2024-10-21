@@ -40,16 +40,16 @@ const PortfolioPage = () => {
 
     const x = useTransform(scrollYProgress, [0, 1], ["0%", "-75%"])
     return (
-        <motion.div className="h-full" initial={{ y: "-200vh" }} animate={{ y: "0%" }} transition={{ duration: 1 }}>
-            <div className="h-[600vh] relative" >
-                <div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center lg:text-8xl text-6xl text-center">My Works</div>
+        <motion.div className="h-full" initial={{ y: "-200vh" }} animate={{ y: "-2.6%" }} transition={{ duration: 1 }}>
+            <div className="h-[400vh] relative" >
+                <div className="w-screen h-[calc(100vh-6rem)] flex items-center justify-center lg:text-8xl text-6xl text-center overflow-x-hidden">My Works</div>
                 <div className="sticky top-0 flex h-screen gap-4 items-center overflow-hidden">
                     <motion.div style={{ x }} className="flex">
                         <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-purple-300 to-red-300" />
                         {items.map(item => (
                             <div className={`h-screen w-screen flex items-center justify-center bg-gradient-to-r ${item.color}`}
                                 key={item.id}>
-                                <div className="flex flex-col text-white justify-between items-center"> 
+                                <div className="flex flex-col text-white justify-between items-center overflow-x-hidden"> 
                                     <h1 className="text-xl font-bold md:text-4xl lg:text-6xl xl:text-8xl">
                                         {item.title}
                                     </h1>

@@ -36,10 +36,9 @@ const ContactPage = () => {
     return (
 
 
-        <motion.div className="h-full" initial={{ y: "-200vh" }} animate={{ y: "0%" }} transition={{ duration: 1 }}>
-            <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32 overflow-scroll">
+        <div className="h-full flex flex-col lg:flex-row px-4 sm:px-8 md:px-12 lg:px-20 xl:px-32 overflow-x-hidden">
                 {/* TextContainer  */}
-                <div className="flex flex-col lg:h-full lg:w-1/2 gap-8 lg:mt-[30vh] text-center">
+                <div className="flex flex-col lg:w-1/2 gap-8 lg:mt-[30vh] text-center">
                     <p className="text-6xl">
                         Work with Me :)
                     </p>
@@ -75,7 +74,6 @@ const ContactPage = () => {
                 </form>
 
             </div>
-        </motion.div>
     )
 }
 

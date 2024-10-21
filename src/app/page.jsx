@@ -35,7 +35,7 @@ const Homepage = () => {
           <div>
             <h1 className="italic text-xl md:text-2xl md:mt-2 text-center">Hello! I am Prasuk Jain, a passionate and dedicated third-year B.Tech student specializing in Computer Science at Punjab Engineering College, Chandigarh. I am a Full-Stack Developer with a strong focus on front-end development. I enjoy creating digital experiences that are clean, efficient, and user-friendly.</h1>
           </div>
-          <div className="flex gap-8 w-full justify-center lg:justify-normal">
+          <div className="flex gap-8 w-full justify-center ">
             <Link href="/portfolio">
               <button className="rounded-md p-2 bg-black text-white ring-1 ring-black">View My Work</button>
             </Link>

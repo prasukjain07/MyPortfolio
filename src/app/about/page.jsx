@@ -19,7 +19,7 @@ const AboutPage = () => {
         <motion.div className="h-full" initial={{ y: "-200vh" }} animate={{ y: "0%" }} transition={{ duration: 1 }}>
 
             {/* Container */}
-            <div className="h-full overflow-scroll lg:flex " ref={containerRef}>
+            <div className="h-full overflow-scroll lg:flex overflow-x-hidden " ref={containerRef}>
                 {/* textcontainer  */}
                 <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-32 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 lg:w-2/3 lg:pr-0 xl:1/2">
                     {/* AboutMe  */}
@@ -112,8 +112,60 @@ const AboutPage = () => {
                     <div className="flex flex-col justify-center pb-48" ref={experienceRef}>
                         <motion.h1 className="font-bold text-2xl mb-16" initial={{ x: "-300px" }} animate={isExperienceRefInView ? { x: 0 } : {}} transition={{ delay: 0.2 }}>
                             Experience
-                            </motion.h1>
+                        </motion.h1>
                         {/* Experience list  */}
+                        <motion.div initial={{ x: "-300px" }} animate={isExperienceRefInView ? { x: 0 } : {}}>
+                            {/* Experience list item  */}
+                            <div className="flex justify-between h-48">
+                                {/* left  */}
+                                <div className="w-1/3">
+                                    <div className="bg-white p-3 font-semibold rounded-b-lg rounded-l-lg ">Website Development and Management</div>
+                                    <div className="p-3 text-sm italic">Develop and manage the Website of annual fest of our college PECFEST</div>
+                                    <div className="p-3  text-sm font-semibold" style={{ color: '#000034' }}>
+                                        Sep 2024 - Current
+                                    </div>
+                                </div>
+                                {/* center  */}
+                                <div className="w-1/6 flex justify-center">
+                                    {/* line  */}
+                                    <div className="flex justify-center w-1 h-full bg-gray-600 rounded relative">
+                                        <div className="absolute w-5 h-5 rounded-full ring-4 ring-blue-900 bg-white "></div>
+                                    </div>
+                                </div>
+                                {/* right  */}
+                                <div className="w-1/3">
+
+                                </div>
+                            </div>
+
+                        </motion.div>
+
+                        {/* Experience list  */}
+                        <motion.div initial={{ x: "-600px" }} animate={isExperienceRefInView ? { x: 0, transition: { delay: 0.5 } } : {}}>
+                            {/* Experience list item  */}
+                            <div className="flex justify-between h-48">
+                                {/* left  */}
+                                <div className="w-1/3">
+                                </div>
+                                {/* center  */}
+                                <div className="w-1/6 flex justify-center">
+                                    {/* line  */}
+                                    <div className="flex justify-center w-1 h-full bg-gray-600 rounded relative">
+                                        <div className="absolute w-5 h-5 rounded-full ring-4 ring-blue-900 bg-white "></div>
+                                    </div>
+                                </div>
+                                {/* right  */}
+                                <div className="w-1/3">
+                                    <div className="bg-white p-3 font-semibold rounded-b-lg rounded-l-lg ">Executive Body Member (ACM)</div>
+                                    <div className="p-3 text-sm italic">Led the planning and Execution of tech events, coding competitions, and workshops.</div>
+                                    <div className="p-3 text-sm font-semibold style={{ color: '#000034' }}">
+                                        Aug 2023 - Current
+                                    </div>
+                                </div>
+                            </div>
+
+                        </motion.div>
+
                         <motion.div initial={{ x: "-300px" }} animate={isExperienceRefInView ? { x: 0 } : {}}>
                             {/* Experience list item  */}
                             <div className="flex justify-between h-48">
@@ -139,9 +191,8 @@ const AboutPage = () => {
                             </div>
 
                         </motion.div>
-
                         {/* Experience list  */}
-                        <motion.div initial={{ x: "-600px" }} animate={isExperienceRefInView ? { x: 0, transition: { delay: 0.5 }  } : {}}>
+                        <motion.div initial={{ x: "-600px" }} animate={isExperienceRefInView ? { x: 0, transition: { delay: 0.5 } } : {}}>
                             {/* Experience list item  */}
                             <div className="flex justify-between h-48">
                                 {/* left  */}
@@ -165,33 +216,6 @@ const AboutPage = () => {
                             </div>
 
                         </motion.div>
-
-                        {/* Experience list  */}
-                        <motion.div initial={{ x: "-300px" }} animate={isExperienceRefInView ? { x: 0, transition: { delay: 1 }  } : {}}>
-                            {/* Experience list item  */}
-                            <div className="flex justify-between h-64">
-                                {/* left  */}
-                                <div className="w-1/3">
-                                    <div className="bg-white p-3 font-semibold rounded-b-lg rounded-l-lg ">Implementation Body, ACM</div>
-                                    <div className="p-3 text-sm italic">Regularly conducted technical & coding sessions.</div>
-                                    <div className="p-3  text-sm font-semibold" style={{ color: '#000034' }}>
-                                        Jan 2024 - April 2024
-                                    </div>
-                                </div>
-                                {/* center  */}
-                                <div className="w-1/6 flex justify-center">
-                                    {/* line  */}
-                                    <div className="flex justify-center w-1 h-full bg-gray-600 rounded relative">
-                                        <div className="absolute w-5 h-5 rounded-full ring-4 ring-blue-900 bg-white "></div>
-                                    </div>
-                                </div>
-                                {/* right  */}
-                                <div className="w-1/3">
-
-                                </div>
-                            </div>
-                        </motion.div>
-
                     </div>
                 </div>
                 {/* svgcontainer  */}
